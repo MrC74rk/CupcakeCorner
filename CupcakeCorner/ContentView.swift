@@ -36,7 +36,7 @@ struct ContentView: View {
                         }
 
                         Toggle(isOn: $order.addSprinkles) {
-                            Text("Extra sprinkles")
+                            Text("Add sprinkles")
                         }
                     }
                 }
