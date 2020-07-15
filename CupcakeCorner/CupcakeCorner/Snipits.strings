@@ -1,0 +1,44 @@
+/* 
+  Snipits.strings
+  CupcakeCorner
+ 
+  File of code snipits from this tutorial
+ 
+ Created by Bryan Angelo on 7/15/20.
+  Copyright © 2020 Bryan Angelo. All rights reserved.
+*/
+
+//The Following sets up a var in an class, to conform to ObservableBoject and Codeable when given a @Published state
+class User: ObservableObject, Codable {
+    enum CodingKeys: CodingKey {
+        case name
+    }
+    
+    @Published var name = "Bryan Angelo"
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        name = try container.decode(String.self, forKey: .name)
+    }
+    
+     func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(name, forKey: .name)
+    }
+
+}
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+
+
