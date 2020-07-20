@@ -25,13 +25,9 @@ struct CheckoutView: View {
                     Text("Your total is $\(self.order.cost, specifier: "%.2f")")
                         .font(.title)
 
-                    Button("Place Order") {
                         Button("Place Order") {
                             self.placeOrder()
-                        }
-                        .padding()
-                        
-                    }
+                        }.padding()
                 }
             }
         }

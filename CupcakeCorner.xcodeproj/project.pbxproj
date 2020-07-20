@@ -62,6 +62,7 @@
 		BD5DB27424BF2A0B006832A3 /* CupcakeCorner */ = {
 			isa = PBXGroup;
 			children = (
+				BD5DB28D24BF3EDC006832A3 /* Order.swift */,
 				BD5DB27524BF2A0B006832A3 /* AppDelegate.swift */,
 				BD5DB27724BF2A0B006832A3 /* SceneDelegate.swift */,
 				BD5DB28F24BF4632006832A3 /* AddressView.swift */,
@@ -71,7 +72,6 @@
 				BD5DB28024BF2A0C006832A3 /* LaunchScreen.storyboard */,
 				BD5DB28324BF2A0C006832A3 /* Info.plist */,
 				BD5DB27D24BF2A0C006832A3 /* Preview Content */,
-				BD5DB28D24BF3EDC006832A3 /* Order.swift */,
 			);
 			path = CupcakeCorner;
 			sourceTree = "<group>";
